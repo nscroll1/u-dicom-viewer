@@ -72,6 +72,8 @@
 
 <hr />
 
+This project was build in <strong>ubuntu 20.04.06 LTS </strong> with <strong>npm 6.14.4</strong> and <strong> nodejs  10.19.0</strong>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
