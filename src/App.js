@@ -1025,7 +1025,7 @@ class App extends PureComponent {
       else 
         return (
           <Typography variant="overline" className={classes.title}>
-            <strong>U</strong> <strong>D</strong>icom <strong>V</strong>iewer
+            <strong>ICQ U</strong> <strong>D</strong>icom <strong>V</strong>iewer
           </Typography>          
         )
     } else {
@@ -1052,7 +1052,7 @@ class App extends PureComponent {
       } else
         return (
           <Typography variant="overline" className={classes.title}>
-            <strong>U</strong> <strong>D</strong>icom <strong>V</strong>iewer
+            <strong>ICQ U</strong> <strong>D</strong>icom <strong>V</strong>iewer
           </Typography>
         )
     }
@@ -1956,12 +1956,12 @@ class App extends PureComponent {
               </ListItem>    
               <ListItem button onClick={() => this.toggleFileManager()}>
                 <ListItemIcon><Icon path={mdiFileCabinet} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='File Manager' />
+                <ListItemText classes={primaryClass} primary='Adm. de archivos' />
               </ListItem>      
               
               <ListItem button onClick={() => this.toggleOpenMenu()}>
                 <ListItemIcon><Icon path={mdiFolderMultiple} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Open ...' />
+                <ListItemText classes={primaryClass} primary='Abrir ...' />
                 {openMenu ? <ExpandLess /> : <ExpandMore />}
               </ListItem>                    
               <Collapse in={openMenu} timeout="auto" unmountOnExit>
@@ -1970,7 +1970,7 @@ class App extends PureComponent {
                     <ListItemIcon><Icon path={mdiFolder} size={'1.0rem'} color={iconColor} /></ListItemIcon>
                     <ListItemText classes={primaryClass} 
                       primary={
-                        <Typography type="body1" style={{fontSize: '0.80em', marginLeft: '-20px'}}>File</Typography>
+                        <Typography type="body1" style={{fontSize: '0.80em', marginLeft: '-20px'}}>Archivo</Typography>
                       } />
                   </ListItem>
                   <ListItem button style={{paddingLeft: 30}} onClick={() => this.showOpenUrl()}>
@@ -2003,7 +2003,7 @@ class App extends PureComponent {
 
               <ListItem button onClick={() => this.clear()}>
                 <ListItemIcon><Icon path={mdiDelete} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Clear All' />
+                <ListItemText classes={primaryClass} primary='Borrar todo' />
               </ListItem>  
               <ListItem button onClick={this.handleLayout}>
                 <ListItemIcon><Icon path={mdiViewGridPlusOutline} size={iconSize} color={iconColor} /></ListItemIcon>
@@ -2011,12 +2011,12 @@ class App extends PureComponent {
               </ListItem>   
               <ListItem button onClick={() => this.showSettings()}>
                 <ListItemIcon><Icon path={mdiCog} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Settings' />
+                <ListItemText classes={primaryClass} primary='Config.' />
               </ListItem>                
               <Divider />
               <ListItem button onClick={() => this.toggleToolbox()} disabled={!isOpen}>
                 <ListItemIcon><Icon path={mdiChartHistogram} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Histogram' />
+                <ListItemText classes={primaryClass} primary='Histograma' />
               </ListItem>  
               <ListItem button onClick={() => this.toggleMpr()} disabled={!isOpen || this.mprPlane === ''}>
                 <ListItemIcon><Icon path={mdiAxisArrow} size={iconSize} color={iconColor} /></ListItemIcon>
@@ -2073,7 +2073,7 @@ class App extends PureComponent {
 
               <ListItem button onClick={() => this.toggleImageEdit()} disabled={!isOpen}>
                 <ListItemIcon><Icon path={mdiImageEdit} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Edit' />
+                <ListItemText classes={primaryClass} primary='Editar' />
                 {openImageEdit ? <ExpandLess /> : <ExpandMore />}
               </ListItem>          
               <Collapse in={openImageEdit} timeout="auto" unmountOnExit>
@@ -2086,7 +2086,7 @@ class App extends PureComponent {
               </Collapse>   
               <ListItem button onClick={() => this.toggleTools()} disabled={!isOpen}>
                 <ListItemIcon><Icon path={mdiTools} size={iconSize} color={iconColor} /></ListItemIcon>
-                <ListItemText classes={primaryClass} primary='Tools' />
+                <ListItemText classes={primaryClass} primary='Herramientas' />
                 {openTools ? <ExpandLess /> : <ExpandMore />}
               </ListItem>   
               <Collapse in={openTools} timeout="auto" unmountOnExit>
